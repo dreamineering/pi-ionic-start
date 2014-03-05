@@ -1,0 +1,19 @@
+{
+  "name": "zk-utils-offset",
+  "version": "0.0.1",
+  "description": "ZK offset",
+  "main": "index.html",
+  "style": "styles/offset.css",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dreamineering/zk-utils-offset.git"
+  },
+  "keywords": [
+    "css",
+    "ztylekitchen",
+    "normalize"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

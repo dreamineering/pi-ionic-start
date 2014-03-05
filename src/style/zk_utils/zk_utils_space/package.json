@@ -1,0 +1,19 @@
+{
+  "name": "zk-space",
+  "version": "0.0.1",
+  "description": "ZK space",
+  "main": "index.html",
+  "style": "styles/space.css",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dreamineering/zk-utils-space.git"
+  },
+  "keywords": [
+    "css",
+    "ztylekitchen",
+    "normalize"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

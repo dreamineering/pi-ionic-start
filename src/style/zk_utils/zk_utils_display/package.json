@@ -1,0 +1,20 @@
+{
+  "name": "zk-utils-display",
+  "version": "0.0.1",
+  "description": "ZK display",
+  "main": "index.html",
+  "style": "styles/display.css",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dreamineering/zk-utils-display.git"
+  },
+  "keywords": [
+    "css",
+    "ztylekitchen",
+    "utils display",
+    "suit.css"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

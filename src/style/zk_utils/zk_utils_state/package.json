@@ -1,0 +1,19 @@
+{
+  "name": "zk-utils-state",
+  "version": "0.0.1",
+  "description": "ZK state",
+  "main": "index.html",
+  "style": "styles/state.css",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dreamineering/zk-utils-state.git"
+  },
+  "keywords": [
+    "css",
+    "ztylekitchen",
+    "normalize"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "zk-grid",
+  "version": "0.0.1",
+  "description": "ZK grid",
+  "main": "index.html",
+  "style": "styles/grid.css",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dreamineering/zk-grid.git"
+  },
+  "keywords": [
+    "css",
+    "ztylekitchen",
+    "normalize"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

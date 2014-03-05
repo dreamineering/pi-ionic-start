@@ -1,0 +1,19 @@
+{
+  "name": "zk-link",
+  "version": "0.0.1",
+  "description": "ZK link",
+  "main": "index.html",
+  "style": "styles/link.css",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dreamineering/zk-utils-link.git"
+  },
+  "keywords": [
+    "css",
+    "ztylekitchen",
+    "normalize"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

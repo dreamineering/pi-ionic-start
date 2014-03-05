@@ -1,0 +1,19 @@
+{
+  "name": "zk-utils-dimension",
+  "version": "0.0.1",
+  "description": "ZK dimension",
+  "main": "index.html",
+  "style": "styles/dimension.css",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dreamineering/zk-utils-dimension.git"
+  },
+  "keywords": [
+    "css",
+    "ztylekitchen",
+    "normalize"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

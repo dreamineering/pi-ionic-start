@@ -1,0 +1,19 @@
+{
+  "name": "zk-base",
+  "version": "0.0.1",
+  "description": "ZK normalize",
+  "main": "index.html",
+  "style": "styles/base.css",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dreamineering/zk-normalize.git"
+  },
+  "keywords": [
+    "css",
+    "ztylekitchen",
+    "normalize"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}
