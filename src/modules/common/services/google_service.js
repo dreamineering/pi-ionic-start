@@ -17,8 +17,8 @@ module.exports = angular.module('drmg.services.google', [])
 
     $window.onLoadCallback = function() {
       var googleKeys = {
-        clientId: '983890889547-4372c8pmrfukj2etnokstddet5h7ltk5',
-        apiKey: 'AIzaSyCgSvrPw8sIhBxlxA4DLzSCoJpAFrN0aGg',
+        clientId: 'xxxx',
+        apiKey: 'xxxx',
         scopes: [
           'https://www.googleapis.com/auth/calendar',
           'https://www.googleapis.com/auth/userinfo.profile',
