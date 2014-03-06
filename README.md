@@ -1,10 +1,56 @@
+# ionic with gulp etc
+
+Based on starting project using ionic start cli
+
+The perfect starting point for an Ionic project.
 
 
-# Ionic with Browserify and Gulp
+# Getting Started
 
-A starter based on ionic starter
+install ionic cli
 
-npm install gulp -g
-npm install napa -g
+- [Ionic CLI](https://github.com/driftyco/ionic-cli)
+
+Cordova version 3.4.0-0.1.2 has a bug...
+
+  npm install -g cordova@3.4.0-0.1.0
+
+## Android
+
+* ionic platform android
+* ionic build android
+* ionic emulate android (takes ages)
+* ionic run android
 
 
+re-run with 
+
+ionic run android
+
+### Android tips
+
+Use ADB chome plugin
+
+## iOS
+
+* ionic platform ios
+* ionic build ios
+* ionic emulate ios
+* ionic run ios
+
+
+### iOS tips
+
+Scale down emulator
+
+  window > scales | command 3
+
+
+npm install -g cordova@3.4.0-0.1.0
+
+
+## Best practices
+
+* Use CSS animation
+* Provide visual clues that stuff is happening (users expect instant response)
+* Use your delusion
