@@ -9,9 +9,11 @@ module.exports = function(config) {
     frameworks: ['jasmine', 'browserify'],
     reporters: ['progress'],
     browsers: ['PhantomJS'],
+
+    // https://github.com/xdissent/karma-browserify/issues/20
     preprocessors: {
-      'test/**/*.spec.js': ['browserify'],
       'src/modules/index.js': ['browserify'],
+      'test/**/*.spec.js': ['browserify'],
       'src/modules/**/*.html':  ['ng-html2js']
     },
     ngHtml2JsPreprocessor: {
@@ -28,8 +30,9 @@ module.exports = function(config) {
       dir: 'test/coverage/'
     },
     browserify: {
-      watch: true,
-      require: true
+      watch: true
     }
   });
 };
+
+

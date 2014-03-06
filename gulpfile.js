@@ -233,6 +233,7 @@ gulp.task('watch', function() {
 
 gulp.task('build', function(callback) {
   runSequence('clean',
+              ['templates'],
               ['karma'],
               ['modules', 'styles'],
               ['images','fonts','meta'],

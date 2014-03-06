@@ -1,77 +1,58 @@
 describe('Unit: Google Services', function() {
 
-  beforeEach(module('drmg'));
+  // beforeEach(angular.mock.module('drmg'));
 
-  describe('googleServices', function() {
-    var googleApi;
-    var q;
-    var resolvedValue;
+  // describe('googleServices', function() {
+  //   var googleApi;
+  //   var q;
+  //   var resolvedValue;
 
-    beforeEach(inject(function($injector) {
-      googleApi = $injector.get('googleApi');
-      q = $injector.get('$q');
-      spyOn(googleApi, 'gapi')
-        .andCallFake(function() {
-          var d = q.defer();
-          setTimeout(function() {
-            resolvedValue = {
-              clientId: '12345'
-            };
-          }, 100);
-          return d.promise;
-        });
-      googleApi.gapi().then(function(resp) {
-        resolvedValue = resp;
-      });
-    }));
+  //   beforeEach(inject(function($injector) {
+  //     googleApi = $injector.get('googleApi');
+  //     q = $injector.get('$q');
+  //     spyOn(googleApi, 'gapi')
+  //       .andCallFake(function() {
+  //         var d = q.defer();
+  //         setTimeout(function() {
+  //           resolvedValue = {
+  //             clientId: '12345'
+  //           };
+  //         }, 100);
+  //         return d.promise;
+  //       });
+  //     googleApi.gapi().then(function(resp) {
+  //       resolvedValue = resp;
+  //     });
+  //   }));
 
-    describe('googleApi', function() {
+  //   describe('googleApi', function() {
 
-      beforeEach(function() {
-        waitsFor(function() {
-          return resolvedValue !== undefined;
-        }, 500);
-      });
+  //     beforeEach(function() {
+  //       waitsFor(function() {
+  //         return resolvedValue !== undefined;
+  //       }, 500);
+  //     });
 
-      // it('should have a gapi function', function() {
-      //   expect(
-      //     typeof(googleApi.gapi)
-      //   ).toEqual('function');
-      // });
+  //   });
 
-      // it('should call gapi', function() {
-      //   expect(googleApi.gapi.callCount)
-      //     .toEqual(1);
-      // });
+  //   describe('googleAuthApi', function() {
+  //     var authorizedValue, gapiAuth;
+  //     var gapi = {
+  //       auth: {
+  //         authorize: function() {}
+  //       }
+  //     };
+  //     module(function($provide) {
+  //       $provide.value('$window', gapi);
+  //     });
 
-      // it('should resolve with the browser keys', function() {
-      //   expect(resolvedValue.clientId)
-      //     .toBeDefined();
-      // });
-    });
+  //     beforeEach(inject(function($injector) {
+  //       googleAuthApi = $injector.get('googleAuthApi');
+  //       gapiAuth = spyOn(gapi.auth, 'authorize')
+  //         .andCallThrough();
+  //     }));
 
-    describe('googleAuthApi', function() {
-      var authorizedValue, gapiAuth;
-      var gapi = {
-        auth: {
-          authorize: function() {}
-        }
-      };
-      module(function($provide) {
-        $provide.value('$window', gapi);
-      });
+  //   });
+  // });
 
-      beforeEach(inject(function($injector) {
-        googleAuthApi = $injector.get('googleAuthApi');
-        gapiAuth = spyOn(gapi.auth, 'authorize')
-          .andCallThrough();
-      }));
-
-      // it('should have an authorize method', function() {
-      //   expect(
-      //     typeof(googleAuthApi.authorize)
-      //   ).toEqual('function');
-      // });
-    });
-  });
 });

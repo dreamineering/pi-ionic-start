@@ -1,7 +1,6 @@
+/*jshint sub: true */
 
 'use strict';
-
-//require('angular/angular');
 
 // Create your app
 angular.module('drmg', [
@@ -61,7 +60,7 @@ angular.module('drmg', [
     setLastActiveIndex: function(index) {
       window.localStorage['lastActiveProject'] = index;
     }
-  }
+  };
 })
 
 .controller('TodoCtrl', function($scope, $timeout, $ionicModal, Projects) {
@@ -73,7 +72,7 @@ angular.module('drmg', [
     $scope.projects.push(newProject);
     Projects.save($scope.projects);
     $scope.selectProject(newProject, $scope.projects.length-1);
-  }
+  };
 
 
   // Load or initialize projects
@@ -116,7 +115,7 @@ angular.module('drmg', [
     // Inefficient, but save all the projects
     Projects.save($scope.projects);
 
-    task.title = "";
+    task.title = '';
   };
 
   $scope.newTask = function() {
@@ -125,7 +124,7 @@ angular.module('drmg', [
 
   $scope.closeNewTask = function() {
     $scope.taskModal.hide();
-  }
+  };
 
   $scope.toggleProjects = function() {
     $scope.sideMenuController.toggleLeft();
@@ -136,7 +135,7 @@ angular.module('drmg', [
   // this by using $timeout so everything is initialized
   // properly
   $timeout(function() {
-    if($scope.projects.length == 0) {
+    if($scope.projects.length === 0) {
       while(true) {
         var projectTitle = prompt('Your first project title:');
         if(projectTitle) {

@@ -1,11 +1,10 @@
 'use strict';
 
-// require app
-var app = require('../../../src/index');
+var app = require('../../../src/modules/index');
 
-describe('Unit controllers: ', function(){
+describe('Home controllers: ', function(){
 
-  beforeEach(module('drmg'));
+  beforeEach(angular.mock.module('drmg'));
 
   describe('simple test', function () {
 
@@ -15,5 +14,27 @@ describe('Unit controllers: ', function(){
     });
 
   });
+
+  describe('TodoController', function () {
+    // Local variables
+    var TodoController, scope;
+
+    beforeEach(inject(
+      function($controller, $rootScope) {
+        scope = $rootScope.$new();
+        TodoController = $controller('TodoController', {
+          $scope: scope
+        });
+      }
+    ));
+
+    // Testing the TodoController values
+    it('should have projects', function() {
+      expect(scope.projects).toBeDefined();
+    });
+
+
+  });
+
 
 });

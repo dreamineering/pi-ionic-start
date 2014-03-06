@@ -25,6 +25,7 @@
         "require": false,
         "chrono": false,
         "gapi": false,
-        "d3": false
+        "d3": false,
+        "prompt": false
     }
 }
