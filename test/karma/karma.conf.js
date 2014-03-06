@@ -10,6 +10,7 @@ module.exports = function(config) {
     reporters: ['progress'],
     browsers: ['PhantomJS'],
     preprocessors: {
+      'test/**/*.spec.js': ['browserify'],
       'src/modules/index.js': ['browserify'],
       'src/modules/**/*.html':  ['ng-html2js']
     },

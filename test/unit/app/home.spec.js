@@ -1,5 +1,8 @@
 'use strict';
 
+// require app
+var app = require('../../../src/index');
+
 describe('Unit controllers: ', function(){
 
   beforeEach(module('drmg'));

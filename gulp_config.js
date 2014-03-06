@@ -41,7 +41,7 @@ module.exports = {
       'src/vendor/ionic.bundle.js',
       'node_modules/angular-mocks/angular-mocks.js',
       'test/lib/helper/**/*.js',
-      'test/**/*.spec.js',
+      // 'test/**/*.spec.js', see karam browserify
       // 'src/modules/index.js' see karma browserfiy in karma.conf
       // 'src/modules/**/*.html' compliing templates upfront
     ]
