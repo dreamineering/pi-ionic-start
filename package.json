@@ -9,6 +9,14 @@
   },
   "author": "Matt Mischewski",
   "license": "MIT",
+  "napa": {
+    "angular": "angular/bower-angular#v1.2.12",
+    "angular-animate": "angular/bower-angular-animate#v1.2.12",
+    "angular-sanitize": "angular/bower-angular-sanitize#v1.2.12",
+    "angular-mocks": "angular/bower-angular-mocks#v1.2.12",
+    "angular-ui-router": "angular-ui/ui-router",
+    "ionic": "driftyco/ionic-bower"
+  },
   "devDependencies": {
     "gulp": "latest",
     "napa": "latest",
@@ -51,14 +59,6 @@
     "karma-requirejs": "latest",
     "karma-phantomjs-launcher": "latest",
     "karma-browserify": "0.0.6"
-  },
-  "napa": {
-    "angular": "angular/bower-angular",
-    "angular-animate": "angular/bower-angular-animate",
-    "angular-sanitize": "angular/bower-angular-sanitize",
-    "angular-mocks": "angular/bower-angular-mocks",
-    "angular-ui-router": "angular-ui/ui-router",
-    "ionic": "driftyco/ionic-bower"
   },
   "dependencies": {
     "lodash": "~2.4.1",

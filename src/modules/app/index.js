@@ -63,7 +63,7 @@ angular.module('drmg', [
   };
 })
 
-.controller('TodoCtrl', function($scope, $timeout, $ionicModal, Projects) {
+.controller('TodoController', function($scope, $timeout, $ionicModal, Projects) {
 
   // A utility function for creating a new project
   // with the given projectTitle
