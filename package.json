@@ -1,6 +1,6 @@
 {
-  "name": "pi-ionic-start",
-  "version": "0.0.0",
+  "name": "start.ionic",
+  "version": "0.0.1",
   "description": "ionic project starter with gulp and browserify",
   "main": "",
   "scripts": {
@@ -16,6 +16,15 @@
     "angular-mocks": "angular/bower-angular-mocks#v1.2.12",
     "angular-ui-router": "angular-ui/ui-router",
     "ionic": "driftyco/ionic-bower"
+  },
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "gulp-util": "~2.2.14",
+    "gulp-coffee": "~1.4.1",
+    "gulp-if": "0.0.5",
+    "jshint-stylish": "~0.1.5",
+    "run-sequence": "~0.3.6",
+    "browserify": "~3.32.0"
   },
   "devDependencies": {
     "gulp": "latest",
@@ -58,15 +67,8 @@
     "requirejs": "latest",
     "karma-requirejs": "latest",
     "karma-phantomjs-launcher": "latest",
-    "karma-browserify": "0.0.6"
-  },
-  "dependencies": {
-    "lodash": "~2.4.1",
-    "gulp-util": "~2.2.14",
-    "gulp-coffee": "~1.4.1",
-    "gulp-if": "0.0.5",
-    "jshint-stylish": "~0.1.5",
-    "run-sequence": "~0.3.6",
-    "browserify": "~3.32.0"
+    "karma-browserify": "0.0.6",
+    "gulp-csso": "~0.2.6",
+    "browserify-shim": "~3.3.1"
   }
 }

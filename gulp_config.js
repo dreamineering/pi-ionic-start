@@ -8,8 +8,11 @@ module.exports = {
    * development and the `compile_dir` folder is where our app resides once it's
    * completely built.
    */
-  build_dir: 'build',
-  compile_dir: 'www', // to meet cordova convention
+  env: 'development',
+  baseURL: 'http://ionic.yourproject.com',
+  port: 9090,
+  buildDir: 'build',
+  compileDir: 'www', // to meet cordova convention
 
   /**
    * This is a collection of file patterns that refer to our app code (the
@@ -48,8 +51,7 @@ module.exports = {
   },
 
   /**
-   * Using this to around working with stuff that can't be
-   * browserified. In time hopefully this won't be needed.
+   * TODO try using shim with different components
    */
   vendor: {
     js: [

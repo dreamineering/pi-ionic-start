@@ -1,11 +1,10 @@
-# ionic with gulp etc
+# ionic starter
+
+With gulp, sass, browserify
 
 Based on starting project using ionic start cli
 
-The perfect starting point for an Ionic project.
-
-
-# Getting Started
+# Getting Started ionic prerequisites
 
 install ionic cli
 
@@ -54,3 +53,8 @@ npm install -g cordova@3.4.0-0.1.0
 * Use CSS animation
 * Provide visual clues that stuff is happening (users expect instant response)
 * Use your delusion
+
+
+## Conversion
+
+* Find yourproject and replace as appropriate
