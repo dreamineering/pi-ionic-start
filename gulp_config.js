@@ -28,6 +28,7 @@ module.exports = {
     styles:            'src/style/*.scss',
     templates:         'src/modules/**/*.html',
     images:            'src/images/**/*',
+    icons:             'src/icons/**/*',
     fonts:             'src/fonts/**/*',
     meta:              'src/meta/**/*',
     indexHtml:         'src/index.html',

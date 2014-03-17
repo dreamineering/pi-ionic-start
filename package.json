@@ -69,6 +69,8 @@
     "karma-phantomjs-launcher": "latest",
     "karma-browserify": "0.0.6",
     "gulp-csso": "~0.2.6",
-    "browserify-shim": "~3.3.1"
+    "browserify-shim": "~3.3.1",
+    "gulp-rimraf": "0.0.9",
+    "node-static": "~0.7.3"
   }
 }

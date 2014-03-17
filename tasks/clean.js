@@ -9,6 +9,7 @@ var rimraf = require('gulp-rimraf');
 
 module.exports = gulp.task('clean', function() {
   return gulp.src([
+    'src/templates',
     'build/**/*',
     'www/**/*'], { read: false })
     .pipe(rimraf({ force: true }));

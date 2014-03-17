@@ -52,28 +52,3 @@ gulp.task('ionic', function() {
     .pipe(gulp.dest('build/assets/js/process'));
 });
 
-
-// module.exports = gulp.task('scripts', function() {
-
-//   return gulp.src(cfg.app.browserifyEntry)
-//     .pipe(browserify({
-//       insertGlobals : true,
-//       debug : true,
-//       shim: {
-//         'responsive-nav': {
-//           path: 'node_modules/responsive-nav/responsive-nav.js',
-//           exports: 'responsiveNav'
-//         },
-//         'smooth-scroll': {
-//           path: 'node_modules/smooth-scroll/smooth-scroll.js',
-//           exports: 'smoothScroll'
-//         }
-//       }
-//     }))
-//     .pipe(concat('app.js'))
-//     .pipe(gulp.dest(cfg.buildDir + '/assets/js'))
-//     //.pipe(rename({suffix: '.min'}))
-//     .pipe(gif(cfg.env === 'production', uglify()))
-//     .pipe(gif(cfg.env === 'production', gulp.dest(cfg.compileDir + '/assets/js')));
-
-// });
