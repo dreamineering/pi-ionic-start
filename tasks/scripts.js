@@ -38,7 +38,7 @@ gulp.task('browserify', function() {
   return gulp.src(cfg.app.browserifyEntry)
     .pipe(browserify({
       insertGlobals : true,
-      debug : !gutil.env.production
+      debug : true
     }))
     .pipe(concat('browserified.js'))
     .pipe(gulp.dest('build/assets/js/process'));

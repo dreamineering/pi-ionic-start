@@ -42,7 +42,8 @@ module.exports = {
    */
   test: {
     js: [
-      'src/vendor/ionic.bundle.js',
+      'src/vendor/ionic-v0.9.27/js/ionic.bundle.js',
+      // 'node_modules/ionic/js/dist/js/ionic.bundle.js',
       'node_modules/angular-mocks/angular-mocks.js',
       'test/lib/helper/**/*.js',
       'test/**/*.spec.js'
@@ -56,7 +57,8 @@ module.exports = {
    */
   vendor: {
     js: [
-      'src/vendor/ionic.bundle.js'
+      // 'node_modules/ionic/js/dist/js/ionic.bundle.js'
+      'src/vendor/ionic-v0.9.27/js/ionic.bundle.js'
     ],
     // Not sure when to use these, prefer this stuff closer together
     css: [

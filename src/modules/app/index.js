@@ -11,29 +11,6 @@ angular.module('drmg', [
   'drmg.templates'
 ])
 
-// .config(
-//   function($stateProvider, $urlRouterProvider ) {
-
-//     $stateProvider
-//     .state('home', {
-//       url:         '/',
-//       templateUrl: '/pages/home.html'
-//     });
-
-//     $urlRouterProvider.otherwise( '/' );
-//   }
-// )
-
-// .run(
-//   function($rootScope, $state) {
-//     $rootScope.$on('user:authorized', function() {
-//      // $state.go('calendar');
-//     });
-//     $rootScope.$on('user:login_required', function() {
-//       $state.go('home');
-//     });
-//   }
-// )
 
 .factory('Projects', function() {
   return {
@@ -64,7 +41,6 @@ angular.module('drmg', [
 })
 
 .controller('TodoController', function($scope, $timeout, $ionicModal, Projects) {
-
   // A utility function for creating a new project
   // with the given projectTitle
   var createProject = function(projectTitle) {
@@ -100,7 +76,8 @@ angular.module('drmg', [
   $ionicModal.fromTemplateUrl('new-task.html', function(modal) {
     $scope.taskModal = modal;
   }, {
-    scope: $scope
+    scope: $scope,
+    animation: 'slide-in-up'
   });
 
   $scope.createTask = function(task) {
