@@ -50,38 +50,6 @@ gulp.task('watch', ['staticsvr'], function() {
 
 })
 
-// gulp.task('watch', function() {
-
-//   // Listen on port 35729
-//   server.listen(35729, function (err) {
-//     if (err) {
-//       return console.log(err)
-//     };
-//     // Watch tasks go inside inside server.listen()
-//     gulp.watch(buildPath.app.styles, ['styles']);
-
-//     // Watch src js files
-//     gulp.watch(buildPath.app.appScripts, ['karma', 'scripts']);
-
-//     // Watch .html files
-//     gulp.watch(buildPath.app.template, ['karma', 'scripts']);
-
-//     // Watch test.spec.js files
-//     gulp.watch(buildPath.app.specs, ['karma']);
-
-//     // Watch image, meta and font files,
-//     gulp.watch(buildPath.app.images, ['images']);
-//     gulp.watch(buildPath.app.fonts, ['fonts']);
-//     gulp.watch(buildPath.app.meta, ['meta']);
-
-//     // Watch the index.html file
-//     gulp.watch(buildPath.app.indexHtml, ['index.html']);
-
-//   });
-
-// });
-
-
 gulp.task('build', function(callback) {
   runSequence('clean',
               ['templates'],

@@ -28,10 +28,10 @@ module.exports = gulp.task('scripts', ['lint', 'browserify', 'ionic', 'templates
     ])
     .pipe(concat('app.js'))
     .pipe(gulp.dest('build/assets/js'))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(gif(gutil.env.production, ngmin()))
-    .pipe(gif(gutil.env.production, uglify()))
-    .pipe(gulp.dest('www/assets/js'));
+    .pipe(gif(cfg.env === 'production', rename({suffix: '.min'})))
+    .pipe(gif(cfg.env === 'production', ngmin()))
+    .pipe(gif(cfg.env === 'production', uglify()))
+    .pipe(gif(cfg.env === 'production', gulp.dest('www/assets/js')));
 });
 
 gulp.task('browserify', function() {
