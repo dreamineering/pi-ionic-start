@@ -10,7 +10,7 @@ module.exports = {
    */
   env: 'development',
   baseURL: 'http://ionic.yourproject.com',
-  port: 9090,
+  port: 9093,
   buildDir: 'build',
   compileDir: 'www', // to meet cordova convention
 

@@ -1,5 +1,8 @@
 # ionic starter
 
+More details on the whats and whys on [StackMates](http://stackmates.dreamineering.com/stacks/mobile/drmg-start-ionic/)
+
+
 With gulp, sass, browserify
 
 Based on starting project using ionic start cli

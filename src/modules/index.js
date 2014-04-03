@@ -16,6 +16,7 @@
 require('../templates/templates');
 
 // common
+require('./common/security');
 require('./common/services');
 require('./common/filters');
 require('./common/components');

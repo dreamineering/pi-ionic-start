@@ -5,6 +5,7 @@
 // Create your app
 angular.module('drmg', [
   'ionic',
+  'drmg.common.security',
   'drmg.services',
   'drmg.filters',
   'drmg.directives',

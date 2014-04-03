@@ -1,0 +1,33 @@
+<section class="l-form">
+  <form name="signupForm" no-validate ng-submit="signup()" accept-charset="utf-8">
+    <ul>
+      <li>
+        <label for="usermail">Email</label>
+        <input type="email"
+          name="usermail"
+          placeholder="yourname@email.com"
+          ng-model="user.email"
+          required>
+      </li>
+      <li>
+        <label for="password">Password</label>
+        <input type="password"
+          name="password"
+          placeholder="password"
+          ng-model="user.password"
+          required>
+      </li>
+      <li>
+        <label for="password">Password</label>
+        <input type="password"
+          name="passwordConfirmation"
+          placeholder="confirm password"
+          ng-model="user.passwordConfirmation"
+          required>
+      </li>
+      <li>
+        <input type="submit" class="button" value="Signup">
+      </li>
+    </ul>
+  </form>
+</section>

@@ -38,7 +38,7 @@ gulp.task('browserify', function() {
   return gulp.src(cfg.app.browserifyEntry)
     .pipe(browserify({
       insertGlobals : true,
-      debug : true
+      debug : (cfg.env === 'production')
     }))
     .pipe(concat('browserified.js'))
     .pipe(gulp.dest('build/assets/js/process'));

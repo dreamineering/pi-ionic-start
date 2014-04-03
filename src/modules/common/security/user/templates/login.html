@@ -1,0 +1,25 @@
+<section class="l-form">
+  <form name="loginForm" no-validate ng-submit="login()" accept-charset="utf-8">
+    <ul>
+      <li>
+        <label for="usermail">Email</label>
+        <input type="email"
+          name="usermail"
+          placeholder="yourname@email.com"
+          ng-model="user.email"
+          required>
+      </li>
+      <li>
+        <label for="password">Password</label>
+        <input type="password"
+          name="password"
+          placeholder="password"
+          ng-model="user.password"
+          required>
+      </li>
+      <li>
+        <input type="submit" class="button" value="Login">
+      </li>
+    </ul>
+  </form>
+</section>
