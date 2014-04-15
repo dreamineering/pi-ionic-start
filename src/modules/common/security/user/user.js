@@ -1,6 +1,5 @@
 'use strict';
 
-require('angular/angular');
 require('./user_service');
 
 module.exports = angular.module( 'drmg.common.security.user', [

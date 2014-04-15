@@ -1,6 +1,5 @@
 'use strict';
 
-require('angular/angular');
 
 module.exports = angular.module('drmg.common.security.interceptor', [
 ])

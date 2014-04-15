@@ -65,3 +65,85 @@ module.run(['$templateCache', function($templateCache) {
     '');
 }]);
 })();
+
+(function(module) {
+try {
+  module = angular.module('drmg.templates');
+} catch (e) {
+  module = angular.module('drmg.templates', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('common/security/user/templates/login.html',
+    '<section class="l-form">\n' +
+    '  <form name="loginForm" no-validate ng-submit="login()" accept-charset="utf-8">\n' +
+    '    <ul>\n' +
+    '      <li>\n' +
+    '        <label for="usermail">Email</label>\n' +
+    '        <input type="email"\n' +
+    '          name="usermail"\n' +
+    '          placeholder="yourname@email.com"\n' +
+    '          ng-model="user.email"\n' +
+    '          required>\n' +
+    '      </li>\n' +
+    '      <li>\n' +
+    '        <label for="password">Password</label>\n' +
+    '        <input type="password"\n' +
+    '          name="password"\n' +
+    '          placeholder="password"\n' +
+    '          ng-model="user.password"\n' +
+    '          required>\n' +
+    '      </li>\n' +
+    '      <li>\n' +
+    '        <input type="submit" class="button" value="Login">\n' +
+    '      </li>\n' +
+    '    </ul>\n' +
+    '  </form>\n' +
+    '</section>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('drmg.templates');
+} catch (e) {
+  module = angular.module('drmg.templates', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('common/security/user/templates/signup.html',
+    '<section class="l-form">\n' +
+    '  <form name="signupForm" no-validate ng-submit="signup()" accept-charset="utf-8">\n' +
+    '    <ul>\n' +
+    '      <li>\n' +
+    '        <label for="usermail">Email</label>\n' +
+    '        <input type="email"\n' +
+    '          name="usermail"\n' +
+    '          placeholder="yourname@email.com"\n' +
+    '          ng-model="user.email"\n' +
+    '          required>\n' +
+    '      </li>\n' +
+    '      <li>\n' +
+    '        <label for="password">Password</label>\n' +
+    '        <input type="password"\n' +
+    '          name="password"\n' +
+    '          placeholder="password"\n' +
+    '          ng-model="user.password"\n' +
+    '          required>\n' +
+    '      </li>\n' +
+    '      <li>\n' +
+    '        <label for="password">Password</label>\n' +
+    '        <input type="password"\n' +
+    '          name="passwordConfirmation"\n' +
+    '          placeholder="confirm password"\n' +
+    '          ng-model="user.passwordConfirmation"\n' +
+    '          required>\n' +
+    '      </li>\n' +
+    '      <li>\n' +
+    '        <input type="submit" class="button" value="Signup">\n' +
+    '      </li>\n' +
+    '    </ul>\n' +
+    '  </form>\n' +
+    '</section>\n' +
+    '');
+}]);
+})();

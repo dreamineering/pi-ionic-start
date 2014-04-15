@@ -2,6 +2,7 @@
   "name": "start.ionic",
   "version": "0.0.1",
   "description": "ionic project starter with gulp and browserify",
+  "reminder":"when updating angular version make sure it matches that of ionic otherwise karma will throw its toys",
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -67,7 +68,7 @@
     "requirejs": "latest",
     "karma-requirejs": "latest",
     "karma-phantomjs-launcher": "latest",
-    "karma-browserify": "0.0.6",
+    "karma-browserify": "~0.0.6",
     "gulp-csso": "~0.2.6",
     "browserify-shim": "~3.3.1",
     "gulp-rimraf": "0.0.9",
